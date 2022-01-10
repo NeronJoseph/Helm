@@ -32,3 +32,9 @@ helm repo list
 
 #Update local repository
 helm repo update
+
+#Pull the chart to local machine. (Note: We'll get a compressed file)
+helm pull bitnami/wordpress
+
+#Pull the chart and untar it to local machine
+helm pull --untar bitnami/wordpress

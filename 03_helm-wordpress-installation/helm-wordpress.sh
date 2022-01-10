@@ -11,3 +11,9 @@ helm list
 
 #Delete your release that you just created 
 helm uninstall my-release
+
+#Install wordpress with custom values during its creation
+helm install --set wordpressBlogName="Helm Tutorial" --set wordpressEmail="neron-joseph@example.com" my-release bitnami/wordpress
+
+#Install wordpress with custom values from a file
+helm install --values custom-values.yaml my-release bitnami/wordpress

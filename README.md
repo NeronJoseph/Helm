@@ -1,2 +1,2 @@
 # Helm
-The repo for familiarizing Helm for Kubernetes. 
+The repo is created for familiarizing Helm for Kubernetes. 

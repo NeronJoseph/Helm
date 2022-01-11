@@ -38,3 +38,15 @@ helm pull bitnami/wordpress
 
 #Pull the chart and untar it to local machine
 helm pull --untar bitnami/wordpress
+
+#Remove a repository called bitnami
+helm repo remove bitnami
+
+#Upgrade a release with name my-release
+helm upgrade my-release bitnami/wordpress
+
+#To get the history of my-release
+helm history my-release
+
+#Rollback my-release to revision 1
+helm rollback my-release 1 

@@ -1,0 +1,17 @@
+# Convert to upper case
+{{ upper .Values.image.repository }} # image: NGINX
+
+# Add quotes to image
+{{ quote .Values.image.repository }} # image: "nginx"
+
+# Replace character 
+{{ replace "x" "y" .Values.image.repository }} # image: nginy
+
+# Shuffle the characters 
+{{ shuffle .Values.image.repository }} # image: xingn
+
+# Add default value 
+{{ default "nginx" .Values.image.repository }}
+
+# Add pipelines with functions
+{{ .Values.image.repository | upper | quote }} # image: "nginx"

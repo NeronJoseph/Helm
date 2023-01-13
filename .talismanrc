@@ -1,3 +1,5 @@
 fileignoreconfig:
 - filename: 09_ranges/case2/serviceaccount.yaml
   checksum: 9e26470fe425ad8ec09d7d5914a6c1afd7e034fa7925dbe7d814ac04712c860b
+- filename: 11_chart-hooks/templates/backup-job.yaml
+  checksum: 634d182678d410024105d9b09cea811b4dcf96f81ba8b4a606d405df18cc9227
